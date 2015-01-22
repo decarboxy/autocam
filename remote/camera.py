@@ -17,7 +17,7 @@ def capture_frame(width, height):
         camera.capture(stream, 'jpeg')
     return stream
 
-if __name__ == __main__:
+if __name__ == "__main__":
     with open("foo.jpg", 'wb') as outfile:
         stream = capture_frame(800, 600)
         outfile.write(stream.getvalue())
